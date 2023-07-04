@@ -1,5 +1,9 @@
 ## Official codes for "Improving Few-shot Image Generation by Structural Discrimination and Textural Modulation"
 
+## Rebuttal
+
+Please find the attached file in ./rebuttal [rebuttal]{./rebuttal/rebuttal.pdf} for the new qualitative results, network architectures,  and relevant discussions.
+
 ### Requirements
 ```
     imageio==2.9.0
