@@ -1,0 +1,65 @@
+# logger options
+snapshot_save_iter: 20000
+snapshot_val_iter: 2000
+snapshot_log_iter: 200
+
+# optimization options
+max_iter: 100000
+weight_decay: 0.0001
+lr_gen: 0.0001
+lr_dis: 0.0001
+init: kaiming
+w_adv_g: 1
+w_adv_d: 1
+w_lap_g: 1
+w_lap_d: 1
+w_recon: 0.5
+w_cls: 1.0
+w_gp: 10
+rec_d: 1
+rec_g: 1
+w_adv_fre: 1
+lofgan: False
+
+# model options
+model: LoFGAN
+gen:
+  nf: 32
+  n_downs: 4
+  norm: bn
+  rate: 0.5
+  wavegan: False
+  wavegan_mean: False
+  adain: False
+  spade: False
+  spade_block: False
+  modulated_spade: True
+  K_shot: 7
+dis:
+  nf: 64
+  n_res_blks: 4
+  num_classes: 85
+  mask_ratio: 0
+  mask_size: 4
+  mask_rec : False
+  patch_size : 4
+  decoder_embed_dim : 128
+  in_channels : 3
+  laplace: True
+  diffaug: False
+  policy: 'color,translation,cutout'
+  fre_loss: True
+
+
+# data options
+dataset: flower
+num_workers: 0
+batch_size: 8
+n_sample_train: 7
+n_sample_val: 7
+n_sample_test: 7
+num_generate: 10
+data_root: datasets/flower_c8189_s128_data_rgb.npy
+
+
+
