@@ -2,7 +2,7 @@
 
 ## Rebuttal
 
-Please find the attached file in ./rebuttal [rebuttal]{./rebuttal/rebuttal.pdf} for the new qualitative results, network architectures,  and relevant discussions.
+Please find the attached file in ./rebuttal <a href="rebuttal/rebuttal.pdf">rebuttal</a> for the new qualitative results, network architectures,  and relevant discussions.
 
 ### Requirements
 ```
